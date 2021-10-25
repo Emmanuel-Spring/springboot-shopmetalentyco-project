@@ -11,9 +11,10 @@ import org.springframework.security.authentication.RememberMeAuthenticationToken
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 
-import com.shopme.security.oauth.CustomerOAuth2User;
-import com.shopme.setting.CurrencySettingBag;
-import com.shopme.setting.EmailSettingBag;
+import com.talentyco.springboot.frontend.security.oauth.CustomerOAuth2User;
+import com.talentyco.springboot.frontend.setting.CurrencySettingBag;
+
+
 
 public class Utility {
 	public static String getSiteURL(HttpServletRequest request) {

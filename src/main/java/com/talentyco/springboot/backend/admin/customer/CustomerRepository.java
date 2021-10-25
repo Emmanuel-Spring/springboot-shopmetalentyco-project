@@ -5,9 +5,16 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import com.shopme.admin.paging.SearchRepository;
+import com.talentyco.springboot.backend.admin.paging.SearchRepository;
+import com.talentyco.springboot.models.entity.Customer;
+
+/**import com.shopme.admin.paging.SearchRepository;
 import com.shopme.common.entity.Customer;
 
+
+ * @author emman
+ *
+ */
 public interface CustomerRepository extends SearchRepository<Customer, Integer> {
 	
 	@Query("SELECT c FROM Customer c WHERE CONCAT(c.email, ' ', c.firstName, ' ', c.lastName, ' ', "

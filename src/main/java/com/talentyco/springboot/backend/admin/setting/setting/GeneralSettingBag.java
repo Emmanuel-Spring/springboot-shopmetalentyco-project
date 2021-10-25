@@ -2,8 +2,9 @@ package com.talentyco.springboot.backend.admin.setting.setting;
 
 import java.util.List;
 
-import com.shopme.common.entity.setting.Setting;
-import com.shopme.common.entity.setting.SettingBag;
+import com.talentyco.springboot.models.entity.setting.Setting;
+import com.talentyco.springboot.models.entity.setting.SettingBag;
+
 
 public class GeneralSettingBag extends SettingBag {
 

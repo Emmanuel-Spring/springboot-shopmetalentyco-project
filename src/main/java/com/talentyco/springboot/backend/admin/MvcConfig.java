@@ -9,7 +9,7 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.shopme.admin.paging.PagingAndSortingArgumentResolver;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingArgumentResolver;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {

@@ -6,9 +6,10 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.shopme.common.entity.CartItem;
-import com.shopme.common.entity.Customer;
-import com.shopme.common.entity.product.Product;
+import com.talentyco.springboot.models.entity.CartItem;
+import com.talentyco.springboot.models.entity.Customer;
+
+
 
 public interface CartItemRepository extends CrudRepository<CartItem, Integer> {
 	public List<CartItem> findByCustomer(Customer customer);

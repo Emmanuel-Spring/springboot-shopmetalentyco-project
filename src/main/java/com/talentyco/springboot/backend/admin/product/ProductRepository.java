@@ -6,7 +6,9 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.shopme.common.entity.product.Product;
+import com.talentyco.springboot.models.entity.product.Product;
+
+
 
 public interface ProductRepository extends PagingAndSortingRepository<Product, Integer> {
 	

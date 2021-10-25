@@ -8,6 +8,7 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -17,7 +18,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingParam;
+import com.talentyco.springboot.backend.admin.security.ShopmeUserDetails;
+import com.talentyco.springboot.backend.admin.setting.setting.SettingService;
+import com.talentyco.springboot.models.entity.Country;
+import com.talentyco.springboot.models.entity.exception.OrderNotFoundException;
+import com.talentyco.springboot.models.entity.order.Order;
+import com.talentyco.springboot.models.entity.order.OrderDetail;
+import com.talentyco.springboot.models.entity.order.OrderStatus;
+import com.talentyco.springboot.models.entity.order.OrderTrack;
+import com.talentyco.springboot.models.entity.setting.Setting;
+
+/*import com.shopme.admin.paging.PagingAndSortingHelper;
 import com.shopme.admin.paging.PagingAndSortingParam;
 import com.shopme.admin.security.ShopmeUserDetails;
 import com.shopme.admin.setting.SettingService;
@@ -28,7 +41,7 @@ import com.shopme.common.entity.order.OrderStatus;
 import com.shopme.common.entity.order.OrderTrack;
 import com.shopme.common.entity.product.Product;
 import com.shopme.common.entity.setting.Setting;
-import com.shopme.common.exception.OrderNotFoundException;
+import com.shopme.common.exception.OrderNotFoundException;*/
 
 @Controller
 public class OrderController {
@@ -197,7 +210,7 @@ public class OrderController {
 			}
 			
 			orderDetail.setOrder(order);
-			orderDetail.setProduct(new Product(Integer.parseInt(productIds[i])));
+			orderDetail.setProduct(new com.talentyco.springboot.models.entity.product.Product(Integer.parseInt(productIds[i])));
 			orderDetail.setProductCost(Float.parseFloat(productDetailCosts[i]));
 			orderDetail.setSubtotal(Float.parseFloat(productSubtotals[i]));
 			orderDetail.setShippingCost(Float.parseFloat(productShipCosts[i]));

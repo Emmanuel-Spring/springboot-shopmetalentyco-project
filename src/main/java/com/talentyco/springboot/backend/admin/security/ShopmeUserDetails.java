@@ -9,8 +9,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.shopme.common.entity.Role;
-import com.shopme.common.entity.User;
+import com.talentyco.springboot.models.entity.Role;
+import com.talentyco.springboot.models.entity.User;
+
+
 
 public class ShopmeUserDetails implements UserDetails {
 	private static final long serialVersionUID = 1L;

@@ -14,7 +14,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.FileUploadUtil;
+import com.talentyco.springboot.backend.admin.FileUploadUtil;
+import com.talentyco.springboot.backend.admin.brand.BrandService;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingParam;
+import com.talentyco.springboot.backend.admin.security.ShopmeUserDetails;
+import com.talentyco.springboot.frontend.category.CategoryService;
+import com.talentyco.springboot.models.entity.Brand;
+import com.talentyco.springboot.models.entity.Category;
+import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
+import com.talentyco.springboot.models.entity.product.Product;
+
+/*import com.shopme.admin.FileUploadUtil;
 import com.shopme.admin.brand.BrandService;
 import com.shopme.admin.category.CategoryService;
 import com.shopme.admin.paging.PagingAndSortingHelper;
@@ -23,7 +34,7 @@ import com.shopme.admin.security.ShopmeUserDetails;
 import com.shopme.common.entity.Brand;
 import com.shopme.common.entity.Category;
 import com.shopme.common.entity.product.Product;
-import com.shopme.common.exception.ProductNotFoundException;
+import com.shopme.common.exception.ProductNotFoundException;*/
 
 @Controller
 public class ProductController {

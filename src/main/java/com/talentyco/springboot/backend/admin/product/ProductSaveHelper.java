@@ -12,9 +12,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.shopme.admin.FileUploadUtil;
-import com.shopme.common.entity.product.Product;
-import com.shopme.common.entity.product.ProductImage;
+import com.talentyco.springboot.backend.admin.FileUploadUtil;
+import com.talentyco.springboot.models.entity.product.Product;
+import com.talentyco.springboot.models.entity.product.ProductImage;
+
+
 
 public class ProductSaveHelper {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductSaveHelper.class);

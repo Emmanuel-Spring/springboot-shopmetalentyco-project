@@ -1,13 +1,15 @@
 package com.talentyco.springboot.backend.admin.product;
 
+import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shopme.common.entity.product.Product;
-import com.shopme.common.exception.ProductNotFoundException;
+import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
+
+
 
 @RestController
 public class ProductRestController {

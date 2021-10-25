@@ -9,8 +9,11 @@ import org.supercsv.io.CsvBeanWriter;
 import org.supercsv.io.ICsvBeanWriter;
 import org.supercsv.prefs.CsvPreference;
 
-import com.shopme.admin.AbstractExporter;
-import com.shopme.common.entity.Category;
+import com.talentyco.springboot.backend.admin.AbstractExporter;
+import com.talentyco.springboot.models.entity.Category;
+
+//import com.shopme.admin.AbstractExporter;
+//import com.shopme.common.entity.Category;
 
 public class CategoryCsvExporter extends AbstractExporter {
 	public void export(List<Category> listCategories, HttpServletResponse response) 

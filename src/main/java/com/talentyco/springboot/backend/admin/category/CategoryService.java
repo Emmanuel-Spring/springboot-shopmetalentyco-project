@@ -17,8 +17,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.shopme.common.entity.Category;
-import com.shopme.common.exception.CategoryNotFoundException;
+import com.talentyco.springboot.models.entity.Category;
+import com.talentyco.springboot.models.entity.exception.CategoryNotFoundException;
+
+
 
 @Service
 @Transactional

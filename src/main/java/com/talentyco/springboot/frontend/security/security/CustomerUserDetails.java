@@ -5,7 +5,7 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.shopme.common.entity.Customer;
+import com.talentyco.springboot.models.entity.Customer;
 
 public class CustomerUserDetails implements UserDetails {
 	private Customer customer;

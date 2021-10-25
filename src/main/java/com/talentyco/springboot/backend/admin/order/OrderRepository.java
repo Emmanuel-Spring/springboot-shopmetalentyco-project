@@ -4,8 +4,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 
-import com.shopme.admin.paging.SearchRepository;
-import com.shopme.common.entity.order.Order;
+import com.talentyco.springboot.backend.admin.paging.SearchRepository;
+import com.talentyco.springboot.models.entity.order.Order;
+
+
 
 public interface OrderRepository extends SearchRepository<Order, Integer> {
 	

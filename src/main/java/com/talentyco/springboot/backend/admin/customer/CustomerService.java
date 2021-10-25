@@ -9,11 +9,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.shopme.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.setting.country.CountryRepository;
+import com.talentyco.springboot.models.entity.Country;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.exception.CustomerNotFoundException;
+
+/*import com.shopme.admin.paging.PagingAndSortingHelper;
 import com.shopme.admin.setting.country.CountryRepository;
 import com.shopme.common.entity.Country;
 import com.shopme.common.entity.Customer;
-import com.shopme.common.exception.CustomerNotFoundException;
+import com.shopme.common.exception.CustomerNotFoundException;*/
 
 @Service
 @Transactional

@@ -16,10 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.FileUploadUtil;
-import com.shopme.common.Constants;
-import com.shopme.common.entity.Currency;
-import com.shopme.common.entity.setting.Setting;
+import com.talentyco.springboot.backend.admin.FileUploadUtil;
+import com.talentyco.springboot.models.entity.Currency;
+import com.talentyco.springboot.models.entity.constants.Constants;
+import com.talentyco.springboot.models.entity.setting.Setting;
+
+
 
 @Controller
 public class SettingController {

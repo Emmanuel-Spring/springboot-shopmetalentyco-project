@@ -11,9 +11,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.shopme.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
+import com.talentyco.springboot.models.entity.product.Product;
+
+/*import com.shopme.admin.paging.PagingAndSortingHelper;
 import com.shopme.common.entity.product.Product;
-import com.shopme.common.exception.ProductNotFoundException;
+import com.shopme.common.exception.ProductNotFoundException;*/
 
 @Service
 @Transactional

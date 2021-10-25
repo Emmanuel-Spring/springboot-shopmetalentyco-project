@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shopme.common.entity.Country;
+import com.talentyco.springboot.models.entity.Country;
+
+
 
 @RestController
 public class CountryRestController {
