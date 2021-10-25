@@ -16,16 +16,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.FileUploadUtil;
-import com.shopme.admin.paging.PagingAndSortingHelper;
-import com.shopme.admin.paging.PagingAndSortingParam;
-import com.shopme.admin.user.UserNotFoundException;
-import com.shopme.admin.user.UserService;
-import com.shopme.admin.user.export.UserCsvExporter;
-import com.shopme.admin.user.export.UserExcelExporter;
-import com.shopme.admin.user.export.UserPdfExporter;
-import com.shopme.common.entity.Role;
-import com.shopme.common.entity.User;
+import com.talentyco.springboot.backend.admin.FileUploadUtil;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingParam;
+import com.talentyco.springboot.backend.admin.user.export.UserCsvExporter;
+import com.talentyco.springboot.backend.admin.user.export.UserExcelExporter;
+import com.talentyco.springboot.backend.admin.user.export.UserPdfExporter;
+import com.talentyco.springboot.backend.admin.user.UserNotFoundException;
+import com.talentyco.springboot.backend.admin.user.UserService;
+import com.talentyco.springboot.models.entity.Role;
+import com.talentyco.springboot.models.entity.User;
+
+ 
 
 @Controller
 public class UserController {

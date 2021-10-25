@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.shopme.common.entity.CartItem;
-import com.shopme.common.entity.ShippingRate;
-import com.shopme.common.entity.product.Product;
+import com.talentyco.springboot.models.entity.CartItem;
+import com.talentyco.springboot.models.entity.ShippingRate;
+import com.talentyco.springboot.models.entity.product.Product;
+
+
 
 @Service
 public class CheckoutService {

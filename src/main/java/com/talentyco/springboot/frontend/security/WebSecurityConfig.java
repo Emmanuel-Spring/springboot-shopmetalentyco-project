@@ -1,4 +1,4 @@
-package com.talentyco.springboot.frontend.security.security;
+package com.talentyco.springboot.frontend.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.shopme.security.oauth.CustomerOAuth2UserService;
-import com.shopme.security.oauth.OAuth2LoginSuccessHandler;
+import com.talentyco.springboot.frontend.security.oauth.CustomerOAuth2UserService;
+import com.talentyco.springboot.frontend.security.oauth.OAuth2LoginSuccessHandler;
+
+
 
 @Configuration
 @EnableWebSecurity

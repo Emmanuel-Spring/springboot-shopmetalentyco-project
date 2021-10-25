@@ -8,12 +8,14 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.shopme.admin.paging.PagingAndSortingHelper;
-import com.shopme.admin.product.ProductRepository;
-import com.shopme.admin.setting.country.CountryRepository;
-import com.shopme.common.entity.Country;
-import com.shopme.common.entity.ShippingRate;
-import com.shopme.common.entity.product.Product;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.product.ProductRepository;
+import com.talentyco.springboot.backend.admin.setting.country.CountryRepository;
+import com.talentyco.springboot.models.entity.Country;
+import com.talentyco.springboot.models.entity.ShippingRate;
+import com.talentyco.springboot.models.entity.product.Product;
+
+
 
 @Service
 @Transactional

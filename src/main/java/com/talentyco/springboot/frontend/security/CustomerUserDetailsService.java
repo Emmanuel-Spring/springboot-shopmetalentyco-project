@@ -1,12 +1,14 @@
-package com.talentyco.springboot.frontend.security.security;
+package com.talentyco.springboot.frontend.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.shopme.common.entity.Customer;
-import com.shopme.customer.CustomerRepository;
+import com.talentyco.springboot.frontend.customer.CustomerRepository;
+import com.talentyco.springboot.models.entity.Customer;
+
+
 
 public class CustomerUserDetailsService implements UserDetailsService {
 	

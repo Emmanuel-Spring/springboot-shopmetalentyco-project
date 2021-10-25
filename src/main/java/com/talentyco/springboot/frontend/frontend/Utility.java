@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.talentyco.springboot.frontend.setting.EmailSettingBag;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.authentication.RememberMeAuthenticationToken;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -36,6 +36,7 @@ public class BrandService {
 		} catch (NoSuchElementException ex) {
 			throw new BrandNotFoundException("Could not find any brand with ID " + id);
 		}
+		
 	}
 	
 	public void delete(Integer id) throws BrandNotFoundException {

@@ -1,4 +1,4 @@
-package com.talentyco.springboot.backend.admin.user.user;
+package com.talentyco.springboot.backend.admin.user;
 
 import java.util.List;
 import java.util.NoSuchElementException;

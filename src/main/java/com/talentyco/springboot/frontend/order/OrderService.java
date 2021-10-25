@@ -11,23 +11,27 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.shopme.checkout.CheckoutInfo;
-import com.shopme.common.entity.Address;
-import com.shopme.common.entity.CartItem;
-import com.shopme.common.entity.Customer;
-import com.shopme.common.entity.order.Order;
-import com.shopme.common.entity.order.OrderDetail;
-import com.shopme.common.entity.order.OrderStatus;
-import com.shopme.common.entity.order.OrderTrack;
-import com.shopme.common.entity.order.PaymentMethod;
-import com.shopme.common.entity.product.Product;
-import com.shopme.common.exception.OrderNotFoundException;
+import com.talentyco.springboot.frontend.checkout.checkout.CheckoutInfo;
+import com.talentyco.springboot.models.entity.Address;
+import com.talentyco.springboot.models.entity.CartItem;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.exception.OrderNotFoundException;
+import com.talentyco.springboot.models.entity.order.Order;
+import com.talentyco.springboot.models.entity.order.OrderDetail;
+import com.talentyco.springboot.models.entity.order.OrderStatus;
+import com.talentyco.springboot.models.entity.order.OrderTrack;
+import com.talentyco.springboot.models.entity.order.PaymentMethod;
+import com.talentyco.springboot.models.entity.product.Product;
+
+
 
 @Service
 public class OrderService {
+	
 	public static final int ORDERS_PER_PAGE = 5;
 	
-	@Autowired private OrderRepository repo;
+	@Autowired 
+	private OrderRepository repo;
 	
 	public Order createOrder(Customer customer, Address address, List<CartItem> cartItems,
 			PaymentMethod paymentMethod, CheckoutInfo checkoutInfo) {

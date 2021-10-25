@@ -13,8 +13,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import com.shopme.setting.PaymentSettingBag;
-import com.shopme.setting.SettingService;
+import com.talentyco.springboot.frontend.setting.PaymentSettingBag;
+import com.talentyco.springboot.frontend.setting.SettingService;
+
+
 
 @Component
 public class PayPalService {

@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.talentyco.springboot.backend.admin.user.user.UserRepository;
+import com.talentyco.springboot.backend.admin.user.UserRepository;
 import com.talentyco.springboot.models.entity.User;
 
 

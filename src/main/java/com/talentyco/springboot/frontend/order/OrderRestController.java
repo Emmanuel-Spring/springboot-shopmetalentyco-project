@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shopme.Utility;
-import com.shopme.common.entity.Customer;
-import com.shopme.common.exception.CustomerNotFoundException;
-import com.shopme.common.exception.OrderNotFoundException;
-import com.shopme.customer.CustomerService;
+import com.talentyco.springboot.frontend.customer.CustomerService;
+import com.talentyco.springboot.frontend.frontend.Utility;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.exception.CustomerNotFoundException;
+import com.talentyco.springboot.models.entity.exception.OrderNotFoundException;
+
+
 
 @RestController
 public class OrderRestController {

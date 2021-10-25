@@ -15,16 +15,16 @@ import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
 import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
 import com.talentyco.springboot.models.entity.product.Product;
 
-/*import com.shopme.admin.paging.PagingAndSortingHelper;
-import com.shopme.common.entity.product.Product;
-import com.shopme.common.exception.ProductNotFoundException;*/
+
 
 @Service
 @Transactional
 public class ProductService {
+	
 	public static final int PRODUCTS_PER_PAGE = 5;
 	
-	@Autowired private ProductRepository repo;
+	@Autowired 
+	private ProductRepository repo;
 	
 	public List<Product> listAll() {
 		return (List<Product>) repo.findAll();

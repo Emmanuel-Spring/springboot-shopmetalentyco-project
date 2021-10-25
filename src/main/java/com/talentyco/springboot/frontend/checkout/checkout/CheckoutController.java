@@ -17,24 +17,26 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.shopme.Utility;
-import com.shopme.address.AddressService;
-import com.shopme.checkout.paypal.PayPalApiException;
-import com.shopme.checkout.paypal.PayPalService;
-import com.shopme.common.entity.Address;
-import com.shopme.common.entity.CartItem;
-import com.shopme.common.entity.Customer;
-import com.shopme.common.entity.ShippingRate;
-import com.shopme.common.entity.order.Order;
-import com.shopme.common.entity.order.PaymentMethod;
-import com.shopme.customer.CustomerService;
-import com.shopme.order.OrderService;
-import com.shopme.setting.CurrencySettingBag;
-import com.shopme.setting.EmailSettingBag;
-import com.shopme.setting.PaymentSettingBag;
-import com.shopme.setting.SettingService;
-import com.shopme.shipping.ShippingRateService;
-import com.shopme.shoppingcart.ShoppingCartService;
+import com.talentyco.springboot.frontend.address.AddressService;
+import com.talentyco.springboot.frontend.checkout.paypal.PayPalApiException;
+import com.talentyco.springboot.frontend.checkout.paypal.PayPalService;
+import com.talentyco.springboot.frontend.customer.CustomerService;
+import com.talentyco.springboot.frontend.frontend.Utility;
+import com.talentyco.springboot.frontend.order.OrderService;
+import com.talentyco.springboot.frontend.setting.CurrencySettingBag;
+import com.talentyco.springboot.frontend.setting.EmailSettingBag;
+import com.talentyco.springboot.frontend.setting.PaymentSettingBag;
+import com.talentyco.springboot.frontend.setting.SettingService;
+import com.talentyco.springboot.frontend.shipping.ShippingRateService;
+import com.talentyco.springboot.frontend.shoppingcart.ShoppingCartService;
+import com.talentyco.springboot.models.entity.Address;
+import com.talentyco.springboot.models.entity.CartItem;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.ShippingRate;
+import com.talentyco.springboot.models.entity.order.Order;
+import com.talentyco.springboot.models.entity.order.PaymentMethod;
+
+
 
 @Controller
 public class CheckoutController {

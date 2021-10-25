@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.shopme.common.Constants;
-import com.shopme.common.entity.setting.Setting;
+import com.talentyco.springboot.models.entity.constants.Constants;
+import com.talentyco.springboot.models.entity.setting.Setting;
 
 @Component
 public class SettingFilter implements Filter {

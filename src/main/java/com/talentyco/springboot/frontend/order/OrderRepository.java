@@ -5,8 +5,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.shopme.common.entity.Customer;
-import com.shopme.common.entity.order.Order;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.order.Order;
+
 
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 	

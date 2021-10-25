@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.paging.PagingAndSortingHelper;
-import com.shopme.admin.paging.PagingAndSortingParam;
-import com.shopme.common.entity.Country;
-import com.shopme.common.entity.ShippingRate;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingHelper;
+import com.talentyco.springboot.backend.admin.paging.PagingAndSortingParam;
+import com.talentyco.springboot.models.entity.Country;
+import com.talentyco.springboot.models.entity.ShippingRate;
+
+
 
 @Controller
 public class ShippingRateController {

@@ -1,4 +1,4 @@
-package com.talentyco.springboot.backend.admin.user.user;
+package com.talentyco.springboot.backend.admin.user;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

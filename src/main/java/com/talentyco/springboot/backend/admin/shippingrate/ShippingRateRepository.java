@@ -5,8 +5,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import com.shopme.admin.paging.SearchRepository;
-import com.shopme.common.entity.ShippingRate;
+import com.talentyco.springboot.backend.admin.paging.SearchRepository;
+import com.talentyco.springboot.models.entity.ShippingRate;
+
+
 
 public interface ShippingRateRepository extends SearchRepository<ShippingRate, Integer> {
 	

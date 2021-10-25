@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shopme.common.entity.Country;
-import com.shopme.common.entity.State;
-import com.shopme.common.entity.StateDTO;
+import com.talentyco.springboot.models.entity.Country;
+import com.talentyco.springboot.models.entity.State;
+import com.talentyco.springboot.models.entity.StateDTO;
+
+
 
 @RestController
 public class StateRestController {

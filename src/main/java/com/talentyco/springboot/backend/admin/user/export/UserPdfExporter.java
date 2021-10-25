@@ -15,8 +15,11 @@ import com.lowagie.text.Phrase;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
-import com.shopme.admin.AbstractExporter;
-import com.shopme.common.entity.User;
+
+import com.talentyco.springboot.backend.admin.AbstractExporter;
+import com.talentyco.springboot.models.entity.User;
+
+
 
 public class UserPdfExporter extends AbstractExporter {
 

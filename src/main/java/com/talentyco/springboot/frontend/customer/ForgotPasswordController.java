@@ -14,11 +14,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.shopme.Utility;
-import com.shopme.common.entity.Customer;
-import com.shopme.common.exception.CustomerNotFoundException;
-import com.shopme.setting.EmailSettingBag;
-import com.shopme.setting.SettingService;
+import com.talentyco.springboot.frontend.frontend.Utility;
+import com.talentyco.springboot.frontend.setting.EmailSettingBag;
+import com.talentyco.springboot.frontend.setting.SettingService;
+import com.talentyco.springboot.models.entity.Customer;
+import com.talentyco.springboot.models.entity.exception.CustomerNotFoundException;
+
+
 
 @Controller
 public class ForgotPasswordController {

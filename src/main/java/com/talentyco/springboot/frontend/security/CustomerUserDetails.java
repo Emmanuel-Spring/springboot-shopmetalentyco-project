@@ -1,4 +1,4 @@
-package com.talentyco.springboot.frontend.security.security;
+package com.talentyco.springboot.frontend.security;
 
 import java.util.Collection;
 
@@ -8,6 +8,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.talentyco.springboot.models.entity.Customer;
 
 public class CustomerUserDetails implements UserDetails {
+ 
+	private static final long serialVersionUID = 1L;
+	
 	private Customer customer;
 	
 	public CustomerUserDetails(Customer customer) {

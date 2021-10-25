@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
 
 
-
 @RestController
 public class ProductRestController {
 
-	@Autowired private ProductService service;
+	@Autowired 
+	private ProductService service;
 	
 	@PostMapping("/products/check_unique")
 	public String checkUnique(Integer id, String name) {

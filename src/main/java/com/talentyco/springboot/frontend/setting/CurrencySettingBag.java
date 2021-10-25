@@ -2,8 +2,8 @@ package com.talentyco.springboot.frontend.setting;
 
 import java.util.List;
 
-import com.shopme.common.entity.setting.Setting;
-import com.shopme.common.entity.setting.SettingBag;
+import com.talentyco.springboot.models.entity.setting.Setting;
+import com.talentyco.springboot.models.entity.setting.SettingBag;
 
 public class CurrencySettingBag extends SettingBag {
 

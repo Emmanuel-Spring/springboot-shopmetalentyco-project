@@ -1,4 +1,4 @@
-package com.talentyco.springboot.backend.admin.user.user;
+package com.talentyco.springboot.backend.admin.user;
 
 public class UserNotFoundException extends Exception {
 

@@ -13,10 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.shopme.admin.FileUploadUtil;
-import com.shopme.admin.security.ShopmeUserDetails;
-import com.shopme.admin.user.UserService;
-import com.shopme.common.entity.User;
+import com.talentyco.springboot.backend.admin.FileUploadUtil;
+import com.talentyco.springboot.backend.admin.security.ShopmeUserDetails;
+import com.talentyco.springboot.backend.admin.user.UserService;
+import com.talentyco.springboot.models.entity.User;
+
+
 
 @Controller
 public class AccountController {

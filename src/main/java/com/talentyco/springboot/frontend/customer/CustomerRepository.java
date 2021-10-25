@@ -4,8 +4,10 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.shopme.common.entity.AuthenticationType;
-import com.shopme.common.entity.Customer;
+import com.talentyco.springboot.models.entity.AuthenticationType;
+import com.talentyco.springboot.models.entity.Customer;
+
+
 
 public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 
