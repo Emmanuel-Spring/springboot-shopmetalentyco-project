@@ -2,11 +2,6 @@ package com.talentyco.springboot.frontend.product;
 
 import java.util.List;
 
-import com.talentyco.springboot.frontend.category.CategoryService;
-import com.talentyco.springboot.models.entity.Category;
-import com.talentyco.springboot.models.entity.exception.CategoryNotFoundException;
-import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
-import com.talentyco.springboot.models.entity.product.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -14,12 +9,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-
+import com.talentyco.springboot.frontend.category.CategoryService;
+import com.talentyco.springboot.models.entity.Category;
+import com.talentyco.springboot.models.entity.exception.CategoryNotFoundException;
+import com.talentyco.springboot.models.entity.exception.ProductNotFoundException;
+import com.talentyco.springboot.models.entity.product.Product;
 
 @Controller
 public class ProductController {
-	@Autowired private ProductService productService;
-	@Autowired private CategoryService categoryService;
+
+	@Autowired
+	private ProductService productService;
+
+	@Autowired
+	private CategoryService categoryService;
 
 	@GetMapping("/c/{category_alias}")
 	public String viewCategoryFirstPage(@PathVariable("category_alias") String alias,

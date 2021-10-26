@@ -29,6 +29,9 @@ public abstract class AbstractAddress extends IdBasedEntity {
 	
 	@Column(name = "postal_code", nullable = false, length = 10)
 	protected String postalCode;
+
+
+
 	
 	public String getFirstName() {
 		return firstName;

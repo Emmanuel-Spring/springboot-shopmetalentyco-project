@@ -6,6 +6,7 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public class AbstractAddressWithCountry extends AbstractAddress {
+
 	@ManyToOne
 	@JoinColumn(name = "country_id")
 	protected Country country;
