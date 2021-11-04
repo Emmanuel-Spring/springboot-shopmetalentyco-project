@@ -41,14 +41,29 @@ import com.talentyco.springboot.models.entity.order.PaymentMethod;
 @Controller
 public class CheckoutController {
 
-	@Autowired private CheckoutService checkoutService;
-	@Autowired private CustomerService customerService;
-	@Autowired private AddressService addressService;
-	@Autowired private ShippingRateService shipService;
-	@Autowired private ShoppingCartService cartService;
-	@Autowired private OrderService orderService;
-	@Autowired private SettingService settingService;
-	@Autowired private PayPalService paypalService;
+	@Autowired 
+	private CheckoutService checkoutService;
+	
+	@Autowired 
+	private CustomerService customerService;
+	
+	@Autowired 
+	private AddressService addressService;
+	
+	@Autowired 
+	private ShippingRateService shipService;
+	
+	@Autowired 
+	private ShoppingCartService cartService;
+	
+	@Autowired 
+	private OrderService orderService;
+	
+	@Autowired 
+	private SettingService settingService;
+	
+	@Autowired 
+	private PayPalService paypalService;
 	
 	@GetMapping("/checkout")
 	public String showCheckoutPage(Model model, HttpServletRequest request) {
