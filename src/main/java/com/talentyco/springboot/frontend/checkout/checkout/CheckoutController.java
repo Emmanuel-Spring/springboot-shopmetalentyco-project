@@ -65,6 +65,8 @@ public class CheckoutController {
 	@Autowired 
 	private PayPalService paypalService;
 	
+	
+	
 	@GetMapping("/checkout")
 	public String showCheckoutPage(Model model, HttpServletRequest request) {
 		Customer customer = getAuthenticatedCustomer(request);
