@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.talentyco.springboot.models.entity.Brand;
 import com.talentyco.springboot.models.entity.Category;
 
-
-
 @RestController
 public class BrandRestController {
 	@Autowired
